@@ -3,7 +3,6 @@ import sqlite3
 from pathlib import Path
 from contextlib import closing
 
-
 # Store the database file inside the order folder
 DATABASE_PATH = Path(__file__).resolve().parent / "orders.db"
 

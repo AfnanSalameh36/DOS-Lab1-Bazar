@@ -1,8 +1,12 @@
 
 from flask import Flask, jsonify
+from order.database import init_db
 
 # Create the Order Service application
 app = Flask(__name__)
+
+# Initialize the database
+init_db()
 
 
 # Health check endpoint
