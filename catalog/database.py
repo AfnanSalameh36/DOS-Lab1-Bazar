@@ -1,8 +1,14 @@
 
+import os
 import sqlite3
 from pathlib import Path
 
-DB_PATH = Path(__file__).resolve().parent / "catalog.db"
+DB_PATH = Path(
+    os.environ.get(
+        "CATALOG_DB_PATH",
+        str(Path(__file__).resolve().parent / "catalog.db")
+    )
+)
 
 
 def get_connection():
