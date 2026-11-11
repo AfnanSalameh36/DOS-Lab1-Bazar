@@ -1,10 +1,14 @@
-
+import os
 import sqlite3
 from pathlib import Path
 from contextlib import closing
 
-# Store the database file inside the order folder
-DATABASE_PATH = Path(__file__).resolve().parent / "orders.db"
+DATABASE_PATH = Path(
+    os.environ.get(
+        "ORDER_DB_PATH",
+        str(Path(__file__).resolve().parent / "orders.db")
+    )
+)
 
 
 def get_connection():

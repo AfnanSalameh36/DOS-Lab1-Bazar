@@ -69,5 +69,5 @@ def purchase(item_id):
 
 
 if __name__ == "__main__":
-    host = os.environ.get("HOST", "127.0.0.1")
-    app.run(host=host, port=5002, debug=True)
+    host = os.environ.get("HOST", "0.0.0.0")
+    app.run(host=host, port=5002, debug=False)
