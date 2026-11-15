@@ -1,0 +1,19 @@
+Welcome to Bazar.com
+
+========== SEARCH RESULTS ==========
+ID: 1 | Title: How to get a good grade in DOS in 40 minutes a day
+ID: 2 | Title: RPCs for Noobs
+
+========== BOOK INFORMATION ==========
+Title: RPCs for Noobs
+Price: 50.0
+Quantity: 1
+
+========== PURCHASE RESULT ==========
+Status Code: 200
+Response: {'message': 'bought book RPCs for Noobs', 'status': 'success'}
+
+========== BOOK INFORMATION ==========
+Title: RPCs for Noobs
+Price: 50.0
+Quantity: 0

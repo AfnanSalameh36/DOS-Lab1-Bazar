@@ -9,14 +9,6 @@ app = Flask(__name__)
 init_db()
 
 
-@app.get("/health")
-def health():
-    return jsonify({
-        "service": "catalog",
-        "status": "ok"
-    })
-
-
 @app.get("/search/<topic>")
 def search(topic):
     return jsonify(search_books(topic.strip()))
@@ -81,4 +73,4 @@ def update(item_id):
 
 
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5001, debug=True)
+   app.run(host="0.0.0.0", port=5001, debug=False)
