@@ -6,7 +6,7 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-# Service addresses: can be overridden later (e.g. Docker) without touching code
+# Service addresses
 CATALOG_URL = os.environ.get("CATALOG_URL", "http://127.0.0.1:5001")
 ORDER_URL = os.environ.get("ORDER_URL", "http://127.0.0.1:5002")
 
