@@ -5,10 +5,10 @@ from database import init_db, save_purchase
 
 app = Flask(__name__)
 
-# Catalog address: can be changed later (e.g. Docker) without touching code
+# creat catalog
 CATALOG_URL = os.environ.get("CATALOG_URL", "http://127.0.0.1:5001")
 
-# Create the purchases table if needed
+# creat the purchases table
 init_db()
 
 
